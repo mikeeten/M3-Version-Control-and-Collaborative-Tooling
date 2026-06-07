@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./",              // all .ts files under tms-client
+    "outDir": "./dist",           // compiled JS output
+
+    // Environment Settings
+    "target": "es2025",           // modern JS features
+    "module": "nodenext",         // Node.js ESM support
+    "moduleResolution": "nodenext",
+    "lib": ["esnext"],            // latest JS standard library
+    "types": ["node"],            // Node.js type definitions
+
+    // Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "strict": true,               // non‑negotiable strict mode
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Recommended Options
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "preserveConstEnums": true
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
