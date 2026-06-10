@@ -1,1 +1,1 @@
-export const PASS_THRESHOLD = 65;
+export const PASS_THRESHOLD = 50;
